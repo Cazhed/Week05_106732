@@ -89,11 +89,11 @@ public class Assignment {
     }
 }
 
-class Shape {
+class ShapeAssignment {
     private String color;
 
-    public Shape() {}
-    public Shape(String color) {
+    public ShapeAssignment() {}
+    public ShapeAssignment(String color) {
         this.color = color;
     }
 
@@ -114,11 +114,11 @@ class Shape {
     }
 }
 
-class Circle extends Shape {
+class CircleAssignment extends ShapeAssignment {
     private double radius;
 
-    public Circle() {}
-    public Circle(double radius, String color) {
+    public CircleAssignment() {}
+    public CircleAssignment(double radius, String color) {
         super(color);
         this.radius = radius;
     }
@@ -136,7 +136,7 @@ class Circle extends Shape {
     }
 }
 
-class Square extends Shape {
+class Square extends ShapeAssignment {
     private double side;
 
     public Square() {}
@@ -158,7 +158,7 @@ class Square extends Shape {
     }
 }
 
-class Rectangle extends Shape {
+class Rectangle extends ShapeAssignment {
     private double length;
     private double width;
 
@@ -186,7 +186,7 @@ class Rectangle extends Shape {
     }
 }
 
-class Triangle extends Shape {
+class Triangle extends ShapeAssignment {
     private double base;
     private double height;
 
